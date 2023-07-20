@@ -61,11 +61,7 @@ class ChatView : UIView, WKNavigationDelegate, WKUIDelegate, WKScriptMessageHand
         contentController.add(self, name:iOSMessageHandlerName)
         configuration.userContentController = contentController
 
-        #if SwiftPM
         let bundle = Bundle.module
-        #else
-        let bundle = Bundle(for: ChatView.self)
-        #endif
         var scriptContent : String?
         
         do {

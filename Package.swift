@@ -20,7 +20,7 @@ let package = Package(
             dependencies: [],
             path: "Sources",
             exclude: ["Info.plist"],
-            resources: [.process("LiveChatWidget.js")],
-            swiftSettings: [.define("SwiftPM")])
+            resources: [.process("LiveChatWidget.js")]
+        )
     ]
 )
